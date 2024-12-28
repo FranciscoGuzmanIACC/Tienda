@@ -1,0 +1,452 @@
+body {
+  padding: 20px;
+  text-align: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+
+.seccion {
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 15px;
+}
+  
+.notificacion {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #3e439b;
+  color: white;
+  padding: 20px 0;
+}
+
+header .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header img {
+  width: 40%;
+  max-width: 200px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+header .carrito {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  z-index: 1000; 
+}
+
+header .carrito img {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: transform 0.2s ease; 
+}
+
+header .carrito img:hover {
+  transform: scale(1.5); 
+}
+
+nav {
+  background-color: #3e439b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #292d77;
+}
+
+
+.banner {
+  display: flex;
+  justify-content: center;
+}
+
+.banner a {
+width: 20%;
+}
+
+.banner img {
+  width: 50%;
+  transition: transform 0.2s ease; 
+  cursor: pointer;
+}
+
+.banner img:hover {
+  transform: scale(1.1); 
+}
+   
+
+.search-container {
+  padding: 10px;
+}
+
+#product-search {
+  padding: 10px;
+  width: 300px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #3e439b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #1d205f;
+}
+
+#results-container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  text-align: left;
+}
+
+.producto {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.producto h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+#carrito-container {
+  border: 2px solid #ddd;
+  padding: 10px;
+  margin-top: 20px;
+  width: 50vh;
+  background-color: #f9f9f9;
+}
+#carrito-list {
+  list-style-type: none;
+  padding: 0;
+}
+#carrito-list li {
+  margin-bottom: 10px;
+}
+
+#notificaciones-container {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f0f8ff;
+  color: #333;
+  font-size: 14px;
+}
+
+.notificacion {
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  color: #155724;
+}
+
+#add-prod-container {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f0f8ff;
+  color: #333;
+  font-size: 14px;
+}
+
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px; 
+}
+
+.juego {
+  background-color: #ffffff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden; /* Para evitar desbordamientos */
+}
+
+.juego p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.img-catalogo {
+  max-width: 200px;
+  transition: transform 0.2s ease; 
+}
+
+.img-catalogo:hover {
+  transform: scale(1.1);
+}
+
+.contenedor-producto {
+  box-shadow: 5px 5px 10px 1px #959595;
+  border-radius: 20px;
+}
+
+.contenedor-producto img {
+  width: 10%;
+  padding: 20px;
+  transition: transform 0.2s ease; 
+}  
+
+.contenedor-producto img:hover {
+  transform: scale(1.2); 
+}
+
+
+
+.rating-section {
+  max-width: 100%;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rating-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/*
+.rating-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+*/
+
+.stars {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.stars input[type="radio"] {
+  display: none;
+}
+
+.stars label {
+  font-size: 24px;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.stars input[type="radio"]:checked ~ label {
+  color: gold;
+}
+
+textarea {
+  resize: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+textarea:focus {
+  border-color: #3e439b;
+  outline: none;
+}
+
+.btn-submit {
+  padding: 10px 20px;
+  background-color: #3e439b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  max-width: 300px;
+  align-self: center;
+}
+
+.btn-submit:hover {
+  background-color: #1b1f65;
+}
+
+
+
+ .mostrarCalif h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.mostrarCalif ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.mostrarCalif li {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.mostrarCalif li strong {
+  color: #3e439b;
+}
+
+.mostrarCalif li .estrellas {
+  color: gold;
+}
+
+.promedio p {
+  position: relative;
+  bottom: 7px;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tabla {
+  width: 70%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.tabla th, .tabla td {
+  border: 1px solid #3e439b;
+  padding: 12px;
+  text-align: left;
+}
+
+.tabla th {
+  background-color: #3e439b;
+  color: white;
+}
+
+.tabla tr:nth-child(even) {
+  background-color: #e6f2ff;
+}
+
+.tabla tr:hover {
+  background-color: #d1e7ff;
+}
+
+.btn {
+  background-color: #3e439b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #3e439b;
+}
+
+.img-carrito {
+  width: 30%;
+  display: block;
+  margin: auto;
+}
+
+.mostrar_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.form-descripcion {
+  margin-bottom: 15px; 
+} 
+
+.form-descripcion label { 
+  display: block; 
+  margin-bottom: 5px; 
+} 
+
+.form-descripcion textarea { 
+  width: 100%; 
+  height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
